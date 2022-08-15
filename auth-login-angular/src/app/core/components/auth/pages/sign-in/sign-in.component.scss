@@ -1,0 +1,48 @@
+@import "../../../../../../scss/variables.scss";
+
+.container {
+  width: 500px;
+  min-height: 300px;
+  background: $branco;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 85px;
+    height: 75px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 100%;
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+      border-bottom: 2px solid #c4c4c4;
+      svg {
+        width: 30px;
+      }
+      input {
+        font-size: 18px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  span {
+    margin-top: 20px;
+    font-weight: 500;
+    color: $vermelho;
+  }
+}
