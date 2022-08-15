@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
+  isButtonDisabled: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
