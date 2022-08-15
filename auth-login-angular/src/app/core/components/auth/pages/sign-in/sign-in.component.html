@@ -1,7 +1,7 @@
 <div class="container">
   <img src="../../../../../../assets/Angular.png" alt="ang" />
 
-  <form>
+  <form [formGroup]="formAuth">
     <label>
       <svg
         width="20"
@@ -16,7 +16,12 @@
         />
       </svg>
 
-      <input type="email" placeholder="Email" required />
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Email"
+        required
+      />
     </label>
     <label>
       <svg
@@ -32,10 +37,15 @@
         />
       </svg>
 
-      <input type="password"  placeholder="Senha" required />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Senha"
+        required
+      />
     </label>
 
-    <button class="button" [disabled]="isButtonDisabled">Login</button>
+    <button class="button" [disabled]="formAuth.invalid" (click)="submit()">Login</button>
   </form>
   <span> Usuário ou senha incorretos </span>
 </div>
